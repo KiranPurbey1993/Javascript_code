@@ -1,4 +1,4 @@
-# Duplicate object entries in array of object
+#1. Duplicate object entries in array of object
 
 var  arr = [
   {id: 1, name: 'Tom'},
