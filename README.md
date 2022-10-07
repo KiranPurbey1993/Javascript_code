@@ -6,13 +6,12 @@ var  arr = [
   {id: 2, name: 'Nick'},
  
 ];
+
 var unique = [];
 
 arr.map(k=> unique.filter(a=> 
 a.name == k.name).length > 0? null:unique.push(k)
 );
-
-
 
 
 
