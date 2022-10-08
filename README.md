@@ -20,7 +20,9 @@ a.name == k.name).length > 0? null:unique.push(k)
 
 # 2. Reverse a string
 var string = "Welcome to this Javascript Guide!";
+
 var s = reverseWord(string, "");
+
 var r = reverseWord(string, " ");
 
 
