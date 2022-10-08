@@ -163,6 +163,15 @@ for (var i=0; i<a.length; i++) {
 
 console.log(index);
 
+var t =null;
+a.forEach(function(item, index) {
+    if(item == search){
+     t = index;   
+    }
+})
+
+console.log(t);
+
 ###### Binary Search is a searching algorithm used in a sorted array by repeatedly dividing the search interval in half
 ###### Binary search, also known as half-interval search
 
