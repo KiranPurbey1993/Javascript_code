@@ -35,3 +35,7 @@ console.log(r);
 
 
 // output = !ediuG tpircsavaJ siht ot emocleW
+
+
+# 3. Enqueue means to add an element, dequeue to remove an element.
+
