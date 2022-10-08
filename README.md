@@ -15,7 +15,7 @@ a.name == k.name).length > 0? null:unique.push(k)
 
 
 
-~console.log(unique);
+// console.log(unique);
 
 
 # 2. Reverse a string
