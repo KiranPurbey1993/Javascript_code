@@ -39,7 +39,7 @@ console.log(r);
 
 # 3. Implement enqueue and dequeue using only two stacks
 
-Enqueue means to add an element, dequeue to remove an element.
+Enqueue means to add an element, dequeue to remove an element in same order how it pushed.
 
 # 4 . Implement mul Function
 
@@ -53,6 +53,67 @@ function mul(a){
         }
     }
 }
+
+# 5. FizzBuzz Challange
+
+for (var i=1;i<=50;i++){
+   let f = i % 3 == 0;
+   let b = i % 5 == 0;
+   console.log(f ? (b?'FizzBuzz':'Fizz') : (b?'Buzz':i));
+}
+
+
+
+// 1
+// 2
+// Fizz
+// 4
+// Buzz
+// Fizz
+// 7
+// 8
+// Fizz
+// Buzz
+// 11
+// Fizz
+// 13
+// 14
+// FizzBuzz
+// 16
+// 17
+// Fizz
+// 19
+// Buzz
+// Fizz
+// 22
+// 23
+// Fizz
+// Buzz
+// 26
+// Fizz
+// 28
+// 29
+// FizzBuzz
+// 31
+// 32
+// Fizz
+// 34
+// Buzz
+// Fizz37
+// 38
+// Fizz
+// Buzz
+// 41
+// Fizz
+// 43
+// 44
+// FizzBuzz
+// 46
+// 47
+// Fizz
+// 49
+// Buzz
+
 
 
 
