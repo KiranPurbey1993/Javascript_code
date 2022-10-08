@@ -135,7 +135,34 @@ function anagrams(st, at){
 
 //console.log(anagrams(st, at));
 
-# 7. Binary Search
+# 7.Search
+
+###### Linear Search
+
+var a = [5,7,9,10,50,80,85];
+var search = 80;
+
+
+1) var t = a.findIndex(el => el== 81);
+
+console.log(t);
+
+
+
+2) let index = a.map(obj => obj).indexOf(search);
+
+console.log(index);
+
+3) var index = null;
+for (var i=0; i<a.length; i++) {
+    if ( a[i] == 80 ) {
+        index = i;
+        break;
+    }
+}
+
+console.log(index);
+
 ###### Binary Search is a searching algorithm used in a sorted array by repeatedly dividing the search interval in half
 ###### Binary search, also known as half-interval search
 
