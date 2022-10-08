@@ -40,8 +40,7 @@ console.log(r);
 
 
 # 3. Implement enqueue and dequeue using only two stacks
-
-Enqueue means to add an element, dequeue to remove an element in same order how it pushed.
+###### Enqueue means to add an element, dequeue to remove an element in same order how it pushed.
 
 # 4 . Implement mul Function
 
@@ -120,7 +119,7 @@ for (var i=1;i<=50;i++){
 // Buzz
 
 # 6. Given two strings, return true if they are anagrams of one another
-eg - Mary and Army
+###### eg - Mary and Army
 
 var st = 'Mary';
 var at = 'Army';
