@@ -41,5 +41,18 @@ console.log(r);
 
 Enqueue means to add an element, dequeue to remove an element.
 
+# 4 . Implement mul Function
+
+console.log(mul(2)(3)(4)); // output : 24
+
+
+function mul(a){
+    return function(b){
+        return function(c){
+        return a * b* c;
+        }
+    }
+}
+
 
 
