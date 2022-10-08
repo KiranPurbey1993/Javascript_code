@@ -57,8 +57,11 @@ function mul(a){
 # 5. FizzBuzz Challange
 
 for (var i=1;i<=50;i++){
+
    let f = i % 3 == 0;
+   
    let b = i % 5 == 0;
+   
    console.log(f ? (b?'FizzBuzz':'Fizz') : (b?'Buzz':i));
 }
 
