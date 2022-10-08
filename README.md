@@ -34,6 +34,8 @@ console.log(s);
 console.log(r);
 
 
+
+
 // output = !ediuG tpircsavaJ siht ot emocleW
 
 
@@ -134,7 +136,9 @@ function anagrams(st, at){
 
 //console.log(anagrams(st, at));
 
-
+# 7. Binary Search
+## Binary Search is a searching algorithm used in a sorted array by repeatedly dividing the search interval in half
+## Binary search, also known as half-interval search
 
 
 
