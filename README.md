@@ -117,6 +117,25 @@ for (var i=1;i<=50;i++){
 // 49
 // Buzz
 
+# 6. Given two strings, return true if they are anagrams of one another
+eg - Mary and Army
+
+var st = 'Mary';
+var at = 'Army';
+
+function anagrams(st, at){
+
+   let k  = st.toLowerCase().split('').sort().join('');
+   
+   let p = at.toLowerCase().split('').sort().join('');
+   
+   if(k == p) {return true;}
+}
+
+//console.log(anagrams(st, at));
+
+
+
 
 
 
