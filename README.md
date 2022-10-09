@@ -258,3 +258,16 @@ function bubble(a){
 }
 
 console.log(bubble(a));
+
+# 9. palindrome
+var k = 'nitin';
+
+
+var t = k.toLowerCase();
+
+var t1 =t.split('').reverse().join('');
+
+console.log(t);
+console.log(t1)
+
+return (t == t1)?console.log('true'):console.log('false');
