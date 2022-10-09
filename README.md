@@ -277,3 +277,15 @@ console.log(1 < 2 < 3);  , because 1<2 ===true ...true< 3 ......true
 ###### ======true
 console.log(3 > 2 > 1);  ====false, because from left to right....3>2 = true...true>1 (1>1====false).....so     
 ###### ====== false
+
+
+# 11. How do you add an element at the begining of an array? How do you add one at the end?
+var k =['p', 'u'];
+1)
+ k.unshift('start');
+k.push('end');
+console.log(k);
+
+2)
+var t = ['start', ...k , 'end']      .............spread operator
+console.log(t);
