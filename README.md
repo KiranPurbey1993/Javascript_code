@@ -289,3 +289,15 @@ console.log(k);
 2)
 var t = ['start', ...k , 'end']      .............spread operator
 console.log(t);
+
+# 12. Mul Function
+###### The MUL function is a miniature of the multiplication function. In this function, we call the function that required an argument as a first number, and that function calls another function that required another argument and this step goes on. 
+
+function mul(x) {
+  return function (y) {
+      return x * y ;
+    
+  };
+}
+
+console.log(mul(2)(3));
