@@ -174,12 +174,56 @@ console.log(t);
 
 ###### Binary Search is a searching algorithm used in a sorted array by repeatedly dividing the search interval in half
 ###### Binary search, also known as half-interval search
+var a = [5,7,9,10,50,80,85];
+var search = 80;
+1)
+var t = a.sort((a, b) => a - b);
+
+// console.log(t);
+
+function binary(t, val){
+    let start = 0;
+    let end = t.length - 1;
+    
+    while (start <= end){
+        let mid = Math.floor((start + end) / 2);
+        
+        if(val == t[mid]){
+            return mid;
+        }
+        
+        if(val < t[mid]){
+            end = mid -1;
+        }else{
+            start = mid+1;
+        }
+    }
+    return -1;
+}
 
 
+console.log(binary(t, 7));
+
+2) 
+
+function binary(t, search, start = 0, end = t.length - 1){
+    let mid = Math.floor((start + end) / 2);
+    
+    if(search == t[mid]){
+        return mid;
+    }
+    
+    return  search < t[mid] ? binary(t, search, start, mid - 1) :
+    binary(t, search, mid + 1, end)
+}
+
+
+console.log(binary(t, 10));
 
 # 8. Sort
-1) var a = [5,7,9,10,50,80,85];
-2) 
+1) 
+var a = [5,7,9,10,50,80,85];
+
 var search = 80;
 
 var t = a.sort((a, b) => a - b);
