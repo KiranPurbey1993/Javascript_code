@@ -231,5 +231,30 @@ var t = a.sort((a, b) => a - b);
 console.log(t)
 
 
+#### Bubble Sort
+###### Bubble Sort only considers one element at a time. Thus, it is highly time consuming and inefficient. Due to its inefficiency, bubble sort is almost never used in production code.
+0(n^2).....omega of n square
+Iteration 1: [6,4,2,5,7] → [4,6,2,5,7] → [4,2,6,5,7] → [4,2,5,6,7] → [4,2,5,6,7]
 
+Iteration 2:[4,2,5,6,7] → [2,4,5,6,7] → [2,4,5,6,7] → [2,4,5,6,7] → [2,4,5,6,7]
 
+Iteration 3: [2,4,5,6,7] → [2,4,5,6,7] → [2,4,5,6,7] → [2,4,5,6,7] → [2,4,5,6,7]
+
+function bubble(a){
+   
+   let n = a.length;
+   
+   for(var i = 0; i<n;i++){
+       for (var j=0; j<n;j++){
+           if(a[j] > a[j + 1]){
+               let tem = a[j];
+               a[j] = a[j+1];
+               a[j+1] = tem;
+               
+           }
+       }
+   }
+   return a
+}
+
+console.log(bubble(a));
