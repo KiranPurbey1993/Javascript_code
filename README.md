@@ -273,7 +273,7 @@ console.log(t1)
 return (t == t1)?console.log('true'):console.log('false');
 
 # 10. Output
-console.log(1 < 2 < 3);  , becoause 1<2 ===true ...true< 3 ......true
+console.log(1 < 2 < 3);  , because 1<2 ===true ...true< 3 ......true
 ###### ======true
 console.log(3 > 2 > 1);  ====false, because from left to right....3>2 = true...true>1 (1>1====false).....so     
-#### false
+###### ====== false
