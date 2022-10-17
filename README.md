@@ -230,6 +230,20 @@ var t = a.sort((a, b) => a - b);
 
 console.log(t)
 
+2)
+let arr = [4, 32, 2, 5, 2,8];
+
+for(var i=0;i<arr.length; i++){
+    for (var j=i+1;j<arr.length;j++){
+        if(arr[i]> arr[j]){
+           let temp = arr[i];
+            arr[i]=arr[j];
+            arr[j] = temp;
+        }
+    }
+}
+
+console.log(arr);
 
 #### Bubble Sort
 ###### Bubble Sort only considers one element at a time. Thus, it is highly time consuming and inefficient. Due to its inefficiency, bubble sort is almost never used in production code.
