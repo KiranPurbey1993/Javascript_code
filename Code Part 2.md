@@ -30,7 +30,8 @@ const numberArray = [1,2,5,8,45,6];
  return counter;
  }
  
-  console.log(ffindOccurance(numberArray, number));
+  console.log(findOccurance(numberArray, number));
+  
   ======================================================
   
   let t = numberArray.filter((e)=>e== x);
