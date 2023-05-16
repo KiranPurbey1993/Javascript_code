@@ -1,1 +1,4 @@
- # 1. Find the peak element in the array
+ # 1. Find the index of  peak element in the array
+ const numberArray = [1,2,5,8,45,6];
+ // output is 45
+ 
