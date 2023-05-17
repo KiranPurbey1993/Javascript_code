@@ -107,5 +107,29 @@ const t = [
     
    console.log(grpByProperty(t, 'age'));
    
+   # 4) Program to check a string with balanced brackets.
+   
+   isValid=(s)=>{
+    let map = {
+        "]":"[",
+        ")":"(",
+        "}":"{"
+    }
+   let stack = [];
+   
+   for(let i=0; i<s.length;i++){
+       if(s[i] == "[" || s[i] == "(" || s[i] == "{"  ){
+           stack.push(s[i]);
+       }else if(stack[stack.length -1] === map[s[i]]){
+           stack.pop();
+       }else return false;
+   }
+    
+  return stack.length ? false:true;  
+}
+
+const t ="{[(])}";
+console.log(isValid(t));
+   
  
  
