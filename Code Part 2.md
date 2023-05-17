@@ -57,5 +57,55 @@ function occurance(arr, number){
 
 let y = occurance(arr, x);
 console.log(y)
+
+# 3) Group by property
+const t = [
+    {name: "Kiran", age:30},
+    {name: "Ritesh", age:30},
+    {name: "Kiran", age:28},
+    {name: "Babu", age:26}
+    
+    ];
+    
+    function grpByProperty(arr, property){
+       let u = arr.reduce((acc, cur)=>{
+           let y = cur[property];
+           if(!acc[y]){
+               acc[y] = [];
+           }
+          
+            acc[y].push(cur);
+           
+           return acc;
+       },{}) ;
+       return u;
+    }
+    
+    console.log(grpByProperty(t, 'name'));
+    
+    =================================
+    
+    const t = [
+    {name: "Kiran", age:30},
+    {name: "Ritesh", age:30},
+    {name: "Kiran", age:28},
+    {name: "Babu", age:26}
+    
+    ];
+    
+    function grpByProperty(arr, property){
+        let grpArr = {};
+        arr.forEach(a=>{
+            if(!grpArr[a[property]]){
+              grpArr[a[property]]  = [a]
+            }else{
+                grpArr[a[property]].push(a); 
+            }
+        });
+        return grpArr;
+    }
+    
+   console.log(grpByProperty(t, 'age'));
+   
  
  
