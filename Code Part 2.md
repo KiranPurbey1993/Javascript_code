@@ -40,7 +40,7 @@ const numberArray = [1,2,5,8,45,6];
   
   ### if multiple occurances then use hash/objects
   const arr = [0, 5, 4, 5, 4, 5];
-var x = 5;
+ var x = 5;
 
 function occurance(arr, number){
    let t = arr.reduce((accumulator, curr)=>{
