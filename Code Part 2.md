@@ -159,6 +159,7 @@ console.log(isValid(t));
         
         =========================if multiple=============
         
+        
    function printpairs(arr, sum)
     {
         let s ={};
