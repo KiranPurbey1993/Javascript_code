@@ -204,4 +204,20 @@ console.log(isValid(t));
  
         // Function call
        findMissing(arr,n);
+ # 6)  Find the missing number from sorted array with O(n) complexity
+ function findMissing(arr,n){
+let miss = [];
+for(var i=0;i< n;i++){
+        if((arr[i + 1] - arr[i] !== 1) && arr[i+1] != undefined){
+           miss.push(arr[i] + 1) 
+        }
+}
+console.log(miss)
+return miss;
+}
+
+let arr = [ 1, 2,3,5,7, 9,11];
+        let n = arr.length;
  
+        // Function call
+       findMissing(arr,n);
