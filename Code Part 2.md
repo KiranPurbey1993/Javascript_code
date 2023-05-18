@@ -133,3 +133,55 @@ console.log(isValid(t));
    
  
  
+ # 5)Find the pairs of array element for which sum is equal to given target value (Two Sum Problem)
+ 
+     function printpairs(arr, sum)
+    {
+        for (let i = 0; i < arr.length -1; ++i)
+        {
+           for(let j = (i+1);j< arr.length;j++){
+               if(arr[i] + arr[j] == sum){
+                console.log(arr[i], arr[j]);
+                  return true;
+               }
+              
+           }
+        }
+         return false;
+    }
+    
+    let A = [ 0, -1, 2, -3, 1];
+        let x = -2;
+        let size = A.length;
+        
+        console.log(printpairs(A, x));
+        
+        
+        =========================if multiple=============
+        
+   function printpairs(arr, sum)
+    {
+        let s ={};
+        let sum1 =[];
+        for (let i = 0; i < arr.length; ++i)
+        {
+            let temp = sum - arr[i];
+ 
+            // checking for condition
+         
+            if (s[temp.toString()] !== undefined) {
+                sum1.push([arr[i], temp]);
+            }
+            
+            s[arr[i].toString()] = arr[i];
+              console.log(s);
+        }
+        return sum1;
+    }
+    
+    let A = [ 0, -1, 2, -3, 1 , -4];
+        let x = -2;
+        let size = A.length;
+        
+        console.log(printpairs(A, x));
+ 
