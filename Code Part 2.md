@@ -185,4 +185,23 @@ console.log(isValid(t));
         let size = A.length;
         
         console.log(printpairs(A, x));
+        
+        
+   # 5) Find the missing number from unsorted array with O(n) complexity
+   
+   function findMissing(arr,n){
+      let total = Math.floor((n+1)*(n+2)/2);
+
+     for(let i=0;i< n;i++){
+         total = total - arr[i];
+     }
+     console.log(total);
+     return total;
+   }
+   
+   let arr = [ 1, 3,  2 ];
+        let n = arr.length;
+ 
+        // Function call
+       findMissing(arr,n);
  
