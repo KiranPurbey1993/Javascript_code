@@ -1,5 +1,5 @@
 # 1. Duplicate object entries in array of object
-
+```
 var  arr = [
   {id: 1, name: 'Tom'},
   {id: 4, name: 'Tom'},
@@ -16,9 +16,10 @@ a.name == k.name).length > 0? null:unique.push(k)
 
 
 // console.log(unique);
-
+```
 ================================
 
+```
 const things = [
   {place:"here",name:"stuff"},
   {place:"there",name:"morestuff"},
@@ -34,8 +35,11 @@ const filteredArr = things.reduce((thing, current) => {
 }, []);
 console.log(filteredArr)
 
+```
 
-========================for duplicate in object ======================
+### =================for duplicate in object ======================
+
+```
 const obj1 = {
   1: 'a',
   2: 'b',
@@ -57,8 +61,10 @@ for(c of t){
 }
 
 console.log(hash)
+```
 
 # 2. Reverse a string
+```
 var string = "Welcome to this Javascript Guide!";
 
 var s = reverseWord(string, "");
@@ -77,13 +83,13 @@ console.log(r);
 
 
 // output = !ediuG tpircsavaJ siht ot emocleW
-
+```
 
 # 3. Implement enqueue and dequeue using only two stacks
 ###### Enqueue means to add an element, dequeue to remove an element in same order how it pushed.
 
 # 4 . Implement mul Function
-
+```
 console.log(mul(2)(3)(4)); // output : 24
 
 
@@ -94,9 +100,10 @@ function mul(a){
         }
     }
 }
+```
 
 # 5. FizzBuzz Challange
-
+```
 for (var i=1;i<=50;i++){
 
    let f = i % 3 == 0;
@@ -157,9 +164,11 @@ for (var i=1;i<=50;i++){
 // Fizz
 // 49
 // Buzz
+```
 
 # 6. Given two strings, return true if they are anagrams of one another
 ###### eg - Mary and Army
+```
 
 var st = 'Mary';
 var at = 'Army';
@@ -174,11 +183,12 @@ function anagrams(st, at){
 }
 
 //console.log(anagrams(st, at));
+```
 
 # 7.Search
 
 ###### Linear Search
-
+```
 var a = [5,7,9,10,50,80,85];
 var search = 80;
 
@@ -211,9 +221,11 @@ a.forEach(function(item, index) {
 })
 
 console.log(t);
+```
 
 ###### Binary Search is a searching algorithm used in a sorted array by repeatedly dividing the search interval in half
 ###### Binary search, also known as half-interval search
+```
 var a = [5,7,9,10,50,80,85];
 var search = 80;
 1)
@@ -243,9 +255,10 @@ function binary(t, val){
 
 
 console.log(binary(t, 7));
+```
 
-2) 
-
+#### 2) 
+```
 function binary(t, search, start = 0, end = t.length - 1){
     let mid = Math.floor((start + end) / 2);
     
@@ -259,18 +272,21 @@ function binary(t, search, start = 0, end = t.length - 1){
 
 
 console.log(binary(t, 10));
+```
 
 # 8. Sort
-1) 
-var a = [5,7,9,10,50,80,85];
+```
+1) var a = [5,7,9,10,50,80,85];
 
 var search = 80;
 
 var t = a.sort((a, b) => a - b);
 
 console.log(t)
+```
 
 2)
+```
 let arr = [4, 32, 2, 5, 2,8];
 
 for(var i=0;i<arr.length; i++){
@@ -284,6 +300,7 @@ for(var i=0;i<arr.length; i++){
 }
 
 console.log(arr);
+```
 
 #### Bubble Sort
 ###### Bubble Sort only considers one element at a time. Thus, it is highly time consuming and inefficient. Due to its inefficiency, bubble sort is almost never used in production code.
@@ -294,6 +311,7 @@ Iteration 2:[4,2,5,6,7] → [2,4,5,6,7] → [2,4,5,6,7] → [2,4,5,6,7] → [2,4
 
 Iteration 3: [2,4,5,6,7] → [2,4,5,6,7] → [2,4,5,6,7] → [2,4,5,6,7] → [2,4,5,6,7]
 
+```
 function bubble(a){
    
    let n = a.length;
@@ -312,11 +330,11 @@ function bubble(a){
 }
 
 console.log(bubble(a));
+```
 
 # 9. palindrome
+```
 var k = 'nitin';
-
-
 var t = k.toLowerCase();
 
 var t1 =t.split('').reverse().join('');
@@ -325,15 +343,19 @@ console.log(t);
 console.log(t1)
 
 return (t == t1)?console.log('true'):console.log('false');
+```
 
 # 10. Output
+```
 console.log(1 < 2 < 3);  , because 1<2 ===true ...true< 3 ......true
 ###### ======true
 console.log(3 > 2 > 1);  ====false, because from left to right....3>2 = true...true>1 (1>1====false).....so     
 ###### ====== false
+```
 
 
 # 11. How do you add an element at the begining of an array? How do you add one at the end?
+```
 var k =['p', 'u'];
 1)
  k.unshift('start');
@@ -343,10 +365,11 @@ console.log(k);
 2)
 var t = ['start', ...k , 'end']      .............spread operator
 console.log(t);
+```
 
 # 12. Mul Function
 ###### The MUL function is a miniature of the multiplication function. In this function, we call the function that required an argument as a first number, and that function calls another function that required another argument and this step goes on. 
-
+```
 function mul(x) {
   return function (y) {
       return x * y ;
@@ -355,3 +378,4 @@ function mul(x) {
 }
 
 console.log(mul(2)(3));
+```
