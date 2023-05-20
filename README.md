@@ -17,6 +17,22 @@ a.name == k.name).length > 0? null:unique.push(k)
 
 // console.log(unique);
 
+================================
+
+const things = [
+  {place:"here",name:"stuff"},
+  {place:"there",name:"morestuff"},
+  {place:"there",name:"morestuff"}
+];
+const filteredArr = things.reduce((thing, current) => {
+  const x = thing.find(item => item.place === current.place);
+  if (!x) {
+    return thing.concat([current]);
+  } 
+    return thing;
+  
+}, []);
+console.log(filteredArr)
 
 # 2. Reverse a string
 var string = "Welcome to this Javascript Guide!";
