@@ -89,10 +89,12 @@ const t = [
     }
     
     console.log(grpByProperty(t, 'name'));
+    
+    
     ```
-    
-    =================================
-    
+  
+  
+  
     ```
     const t = [
     {name: "Kiran", age:30},
@@ -115,6 +117,7 @@ const t = [
     }
     
    console.log(grpByProperty(t, 'age'));
+   
    ```
    
    # 4) Program to check a string with balanced brackets.
@@ -143,62 +146,63 @@ const t ="{[(])}";
 console.log(isValid(t));
    
  ```
- # 5)Find the pairs of array element for which sum is equal to given target value (Two Sum Problem)
+ 
+ # 5)Find the pairs of array element for which sum is equal to given target value (Two Sum Problems)
+ ```
+ function printpairs(arr, sum){
+    for (let i = 0; i < arr.length -1; ++i){
+       for(let j = (i+1);j< arr.length;j++){
+           if(arr[i] + arr[j] == sum){
+            console.log(arr[i], arr[j]);
+              return true;
+           }
+          
+       }
+    }
+ return false;
+}
+
+let A = [ 0, -1, 2, -3, 1];
+let x = -2;
+let size = A.length;
+
+console.log(printpairs(A, x));
  
  ```
-     function printpairs(arr, sum)
+##### if multiple 
+ ```
+ function printpairs(arr, sum)
+{
+    let s ={};
+    let sum1 =[];
+    for (let i = 0; i < arr.length; ++i)
     {
-        for (let i = 0; i < arr.length -1; ++i)
-        {
-           for(let j = (i+1);j< arr.length;j++){
-               if(arr[i] + arr[j] == sum){
-                console.log(arr[i], arr[j]);
-                  return true;
-               }
-              
-           }
+        let temp = sum - arr[i];
+
+        // checking for condition
+     
+        if (s[temp.toString()] !== undefined) {
+            sum1.push([arr[i], temp]);
         }
-         return false;
+        
+        s[arr[i].toString()] = arr[i];
+        //   console.log(s);
     }
-    
-    let A = [ 0, -1, 2, -3, 1];
-        let x = -2;
-        let size = A.length;
-        
-        console.log(printpairs(A, x));
-        
-    
-   =========================if multiple=============
+    return sum1;
+}
+
+let A = [ 0, -1, 2, -3, 1 , -4];
+let x = -2;
+let size = A.length;
+
+console.log(printpairs(A, x));
+```
  
-   function printpairs(arr, sum)
-    {
-        let s ={};
-        let sum1 =[];
-        for (let i = 0; i < arr.length; ++i)
-        {
-            let temp = sum - arr[i];
- 
-            // checking for condition
-         
-            if (s[temp.toString()] !== undefined) {
-                sum1.push([arr[i], temp]);
-            }
-            
-            s[arr[i].toString()] = arr[i];
-              console.log(s);
-        }
-        return sum1;
-    }
-    
-    let A = [ 0, -1, 2, -3, 1 , -4];
-        let x = -2;
-        let size = A.length;
-        
-        console.log(printpairs(A, x));
-        
-        
-   # 5) Find the missing number from unsorted array with O(n) complexity
+      
+      
+# 5) Find the missing number from unsorted array with O(n) complexity
    
+ ```
    function findMissing(arr,n){
       let total = Math.floor((n+1)*(n+2)/2);
 
@@ -214,7 +218,12 @@ console.log(isValid(t));
  
         // Function call
        findMissing(arr,n);
+   ```
+   
  # 6)  Find the missing number from sorted array with O(n) complexity
+ 
+ ```
+ 
  function findMissing(arr,n){
 let miss = [];
 for(var i=0;i< n;i++){
@@ -231,3 +240,5 @@ let arr = [ 1, 2,3,5,7, 9,11];
  
         // Function call
        findMissing(arr,n);
+ ```
+ 
