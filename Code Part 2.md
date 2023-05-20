@@ -1,5 +1,6 @@
  # 1. Find the index of  peak element in the array
-const numberArray = [1,2,5,8,45,6];
+ ```
+ const numberArray = [1,2,5,8,45,6];
  // output is 45
  
  function findPeak(a, n){
@@ -13,7 +14,7 @@ const numberArray = [1,2,5,8,45,6];
  }
  
  console.log(findPeak(numberArray, numberArray.length));
- 
+ ```
  # 2. Find the frequency of a number in an array
  (occurance of number)
  const numberArray = [1,2,5,8,5,6, 5];
