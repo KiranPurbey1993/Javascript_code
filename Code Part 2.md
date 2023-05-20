@@ -16,7 +16,8 @@
  console.log(findPeak(numberArray, numberArray.length));
  ```
  # 2. Find the frequency of a number in an array
- (occurance of number)
+ ```
+ ============(occurance of single number)===============
  const numberArray = [1,2,5,8,5,6, 5];
  number is 5
  /// output : 3
@@ -38,28 +39,33 @@
   let t = numberArray.filter((e)=>e== x);
   console.log(t.length)
   
+  =================================================
+  ```
   
   ### if multiple occurances then use hash/objects
+  ```
   const arr = [0, 5, 4, 5, 4, 5];
- var x = 5;
+   var x = 5;
 
-function occurance(arr, number){
-   let t = arr.reduce((accumulator, curr)=>{
-      if(curr in accumulator){
-          accumulator[curr]++;
-      } else{
-         accumulator[curr] = 1 
-      }
-      return accumulator;
-   },{});
-   return t;
-}
+  function occurance(arr, number){
+     let t = arr.reduce((accumulator, curr)=>{
+        if(curr in accumulator){
+            accumulator[curr]++;
+        } else{
+           accumulator[curr] = 1 
+        }
+        return accumulator;
+     },{});
+     return t;
+  }
  
 
-let y = occurance(arr, x);
-console.log(y)
+ let y = occurance(arr, x);
+ console.log(y)
+```
 
 # 3) Group by property
+```
 const t = [
     {name: "Kiran", age:30},
     {name: "Ritesh", age:30},
@@ -83,9 +89,11 @@ const t = [
     }
     
     console.log(grpByProperty(t, 'name'));
+    ```
     
     =================================
     
+    ```
     const t = [
     {name: "Kiran", age:30},
     {name: "Ritesh", age:30},
@@ -107,9 +115,11 @@ const t = [
     }
     
    console.log(grpByProperty(t, 'age'));
+   ```
    
    # 4) Program to check a string with balanced brackets.
    
+   ```
    isValid=(s)=>{
     let map = {
         "]":"[",
@@ -132,10 +142,10 @@ const t = [
 const t ="{[(])}";
 console.log(isValid(t));
    
- 
- 
+ ```
  # 5)Find the pairs of array element for which sum is equal to given target value (Two Sum Problem)
  
+ ```
      function printpairs(arr, sum)
     {
         for (let i = 0; i < arr.length -1; ++i)
@@ -157,10 +167,9 @@ console.log(isValid(t));
         
         console.log(printpairs(A, x));
         
-        
-        =========================if multiple=============
-        
-        
+    
+   =========================if multiple=============
+ 
    function printpairs(arr, sum)
     {
         let s ={};
