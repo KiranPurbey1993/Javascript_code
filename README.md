@@ -34,6 +34,30 @@ const filteredArr = things.reduce((thing, current) => {
 }, []);
 console.log(filteredArr)
 
+
+========================for duplicate in object ======================
+const obj1 = {
+  1: 'a',
+  2: 'b',
+  3: 'a',
+  4: 'c',
+  5: 'a',
+  6: 'd',
+  7: 'c',
+};
+
+let t = Object.values(obj1);
+let hash = {};
+for(c of t){
+    if(hash[c] != undefined){
+      hash[c] = hash[c] + 1; 
+    }else{
+      hash[c] =1;  
+    }
+}
+
+console.log(hash)
+
 # 2. Reverse a string
 var string = "Welcome to this Javascript Guide!";
 
