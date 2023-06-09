@@ -30,3 +30,24 @@ console.log(factorial(3));
 console.log(factorial(5));
 ```
 ###### Time Complexity - O(n)
+==================================================================
+
+##### 3) Prime Number
+```
+function prime(n){
+ if(n < 2) return false;
+ 
+ for (let i=2; i<n;i++){
+     if(n%i == 0){
+         return false;
+     }
+ }
+ return true;
+}
+
+console.log(prime(2));
+console.log(prime(3));
+console.log(prime(5));
+
+```
+###### Time Complexity - O(n)
