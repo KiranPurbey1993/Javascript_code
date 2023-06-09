@@ -53,7 +53,7 @@ console.log(prime(5));
 ###### Time Complexity - O(n)
 =========================================================
 
-###### 4) Number is Power of 2
+##### 4) Number is Power of 2
 ```
 function isPowerOfTwo(n){
  if(n<1) return false;
