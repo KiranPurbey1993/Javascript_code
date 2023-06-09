@@ -14,3 +14,19 @@ console.log(fibonacci(7));
 
 ```
 ###### Time Complexity - O(n)
+====================================================================
+#### 2) Factorial
+```
+function factorial(n){
+  let fac =   1;
+  for(let i=1;i<=n;i++){
+      fac = fac * i;
+  }
+  return fac;
+}
+
+console.log(factorial(2));
+console.log(factorial(3));
+console.log(factorial(5));
+```
+###### Time Complexity - O(n)
