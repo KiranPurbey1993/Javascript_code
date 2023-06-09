@@ -15,7 +15,20 @@ console.log(fibonacci(7));
 ```
 ###### Time Complexity - O(n)
 ====================================================================
-#### 2) Factorial
+
+#### 2) nth Fibonacci 
+```
+function nthFibonacci(n){
+ if(n<2) return n;
+    return nthFibonacci(n-1) + nthFibonacci(n-2);
+}
+
+console.log(nthFibonacci(7))
+```
+###### Time Complexity - O(2^n)
+==========================================
+
+#### 3) Factorial
 ```
 function factorial(n){
   let fac =   1;
@@ -32,7 +45,7 @@ console.log(factorial(5));
 ###### Time Complexity - O(n)
 ==================================================================
 
-##### 3) Prime Number
+##### 4) Prime Number
 ```
 function prime(n){
  if(n < 2) return false;
@@ -53,7 +66,7 @@ console.log(prime(5));
 ###### Time Complexity - O(n)
 =========================================================
 
-##### 4) Number is Power of 2
+##### 5) Number is Power of 2
 ```
 function isPowerOfTwo(n){
  if(n<1) return false;
