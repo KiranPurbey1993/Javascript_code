@@ -242,3 +242,32 @@ let arr = [ 1, 2,3,5,7, 9,11];
        findMissing(arr,n);
  ```
  
+# 7) String is Panagram - A sentence which contains all the alphabets
+
+```
+let str = "The quick brown fox jumps over the lazy dog";
+
+
+function panagram(str){
+    let al = "abcdefghijklmnopqrstuvwxyz";
+     const alphaArr = al.split('');
+    str = str.toLowerCase();
+    
+    for(let i=0;i<str.length;i++){
+       let el = str[i];
+       const index = alphaArr.indexOf(el);
+       
+       if(index !== -1){
+           alphaArr.splice(index,1)
+       }
+    }
+   
+   return !alphaArr.length
+}
+
+
+console.log(panagram(str))
+
+
+
+```
