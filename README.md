@@ -379,3 +379,14 @@ function mul(x) {
 
 console.log(mul(2)(3));
 ```
+# 13. Currying Function
+
+```
+function add (a){
+    return function(b){
+        return b? add(a+b): a;
+    }
+}
+
+console.log(add(1)(2)(3)(5)());
+```
