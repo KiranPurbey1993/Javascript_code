@@ -33,3 +33,52 @@ function grp(input, z){
 
 console.log(grp(A, ''));
 ```
+
+
+
+# 2)
+``````
+function flattenStudentDetails(studentDetails) {
+  const tStudentDetails = {};
+
+  function flattenObject(obj, parentKey = '') {
+    for (const key in obj) {
+      const newKey = parentKey ? `${parentKey}_${key}` : key;
+
+      if (typeof obj[key] === 'object') {
+        flattenObject(obj[key], newKey);
+      } else {
+        tStudentDetails[newKey] = obj[key];
+      }
+    }
+  }
+
+  flattenObject(studentDetails);
+
+  return tStudentDetails;
+}
+
+const studentDetails = {
+  name: 'amit',
+  education: {
+    school: { name: 'KV', percentage: 72 },
+    college: { name: 'IIT', percentage: 65 },
+  },
+  comments: 'good',
+};
+
+const tStudentDetails = flattenStudentDetails(studentDetails);
+console.log(tStudentDetails);
+
+==================
+{
+  name: 'amit',
+  education_school_name: 'KV',
+  education_school_percentage: 72,
+  education_college_name: 'IIT',
+  education_college_percentage: 65,
+  comments: 'good'
+}
+===================
+
+```````````
